@@ -6,6 +6,24 @@
     box-sizing: border-box;
 }
 
+:root{
+    font-size: 16px;
+    /* Nav List Color */
+    --Home: #4682B4;
+    --About: #BC8F8F;
+    --Facilities: #DA70D6;
+    --Admission: #A0522D;
+
+    /* Hero Title Color */
+    --Amber: #FEA301;
+    --SkyBlue: #01ACFD;
+
+
+    --White: #FFFFFF;
+    --OffBlack: #111111;
+    
+}
+
 .quickSand {
     font-family: "Fira Sans", serif;
     font-weight: 400;
@@ -16,4 +34,131 @@
     font-family: "Fira Sans", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+/* Shared Styles */
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.txt-link{
+    font-family: Quicksand;
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: var(--Amber);
+}
+
+.btn-primary{
+    width: 13.68vw;
+    height: 3.47vw;
+    border: none;
+    border-radius: 5px;
+    color: var(--White);
+    background-color: var(--OffBlack);
+    cursor: pointer;
+
+}
+
+/* Nav Bar Styles */
+
+.header_navBar{
+    width: 80.5vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.logo-navBar{
+    width: 4.3vw;
+    height: 4.3v2;
+}
+
+.txt-navBar{
+    font-family: Quicksand;
+    font-size: 1.89rem;
+    font-weight: 700;
+    color: var(--OffBlack);
+}
+
+.btn-navBar{
+    background-color: var(--Amber);
+    color: var(--OffBlack);
+    cursor: pointer;
+}
+
+.header_navBar-logo{
+    align-items: center;
+    gap: 8px;
+}
+
+.header_navList li{
+    list-style: none;
+}
+
+.header_navList a{
+    text-decoration: none;
+}
+
+.header_navList{
+    gap: 26px;
+}
+
+.header_navList li:nth-child(1) a {
+    color: var(--Home);
+    font-weight: 700;
+}
+
+.header_navList li:nth-child(2) a {
+    color: var(--About);
+}
+
+.header_navList li:nth-child(3) a {
+    color: var(--Facilities);
+}
+
+.header_navList li:nth-child(4) a {
+    color: var(--Admission);
+}
+/* Hero Section Styles */
+
+.hero{
+    width: 80.5vw;
+    height: 40vw;
+    background-image: url("../assets/hero-kids.png");
+    background-repeat: no-repeat;
+    background-size: 32vw;
+    background-position: right bottom;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero_txt-box{
+    width: 44vw;
+    height: 23vw;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.hero_txt-box .empowering{
+    color: var(--Amber);
+}
+
+.hero_txt-box .vision{
+    color: var(--SkyBlue);
+}
+
+.hero_txt-description{
+    font-family: Quicksand;
+    font-size: 1.18rem;
+    color: var(--OffBlack);
 }
