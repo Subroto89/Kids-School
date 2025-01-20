@@ -1,0 +1,19 @@
+/* Global Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quickSand {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleWay {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
