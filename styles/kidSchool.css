@@ -24,6 +24,7 @@
 
     --DarkGray: #202020;
     --Gray: #808080;
+    --DimGray: #666666;
 
 }
 
@@ -52,6 +53,11 @@
     justify-content: center;
 }
 
+.flex-col-gap {
+    gap: 5.5vw;
+    padding: 4vw;
+}
+
 .txt-link {
     font-family: Quicksand;
     font-size: 1.18rem;
@@ -76,6 +82,7 @@
     color: var(--Black);
 
 }
+
 
 /* Nav Bar Styles */
 
@@ -177,18 +184,15 @@
 
 /* Curriculum Section Styles */
 
-.curriculum{
-    align-items: center;
-    gap: 5.5vw;
-    padding: 4vw;
+.curriculum {
     background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.cur_card-box{
-    width:80.5vw;
-    height:33.43vw;
+.cur_card-box {
+    width: 80.5vw;
+    height: 33.43vw;
     justify-content: space-between;
 }
 
@@ -203,23 +207,23 @@
     gap: 26px;
 }
 
-.cur_card-1{
-    background: linear-gradient(to bottom, #DEF5FF 0%, #FFFFFF 100%); 
-    
-} 
+.cur_card-1 {
+    background: linear-gradient(to bottom, #DEF5FF 0%, #FFFFFF 100%);
 
-.cur_card-2{
-    background: linear-gradient(to bottom, #FFF4DC 0%, #FFFFFF 100%);
-    
 }
 
-.cur_card-3{
+.cur_card-2 {
+    background: linear-gradient(to bottom, #FFF4DC 0%, #FFFFFF 100%);
+
+}
+
+.cur_card-3 {
     background: linear-gradient(to bottom, #EEE1FF 0%, #FFFFFF 100%);
     border: rgba(242, 232, 255, 1);
-   
+
 }
 
-.cur_image{
+.cur_image {
     width: 9.5vw;
     height: 9.5vw;
 }
@@ -242,20 +246,154 @@
     font-family: Quicksand;
     font-size: 0.89rem;
     font-weight: 700;
-    
+
 }
 
-.arrow{
+.arrow {
     align-items: center;
     gap: 5px;
 }
 
-.cur_arrow{
+.cur_arrow {
     width: 57px;
     height: 57px;
     cursor: pointer;
 }
 
-.cur_left-arrow{
+.cur_left-arrow {
     transform: scaleX(-1);
 }
+
+/* Story Section Style */
+
+.story {
+    background-image: url("../assets/bg.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.30) 0%, #FFFFFF 100%);
+}
+
+.story_cards-box{
+    width: 80.5vw;
+    height: 44vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.story_card-1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.story_card-2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+
+.story_card-3{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+
+.story_card-4{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.story_card-4{
+    grid-column: 4 / 5;
+    grid-row: 2, 3;
+}
+
+
+.story_cards-box {
+    width: 80.5vw;
+    height: 43.7vw;
+}
+
+.story_card {
+    background-color: var(--White);
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.story_image {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    
+}
+
+.story_image-1{
+    background-image: url("../assets/story-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.story_image-2{
+    background-image: url("../assets/story-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.story_image-3{
+    background-image: url("../assets/story-3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.story_image-4{
+    background-image: url("../assets/story-4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.story_image-5{
+    background-image: url("../assets/story-5.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.story_date {
+    display: inline-block;
+    border-radius: 44.5px;
+    padding: 8px 17px;
+    background-color: #95B226;
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor:default;
+
+}
+
+.story_description { 
+    width: 100%;
+    height: 40%;
+    font-family: Quicksand;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--Black);
+    padding: 30px 15px ;
+    text-align: center;
+}
+
+.story_description-main {
+    font-family: Raleway;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--DimGray);
+}
+
+.story_title {
+    font-family: Quicksand;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--Black);
+}
+
