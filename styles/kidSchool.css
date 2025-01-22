@@ -70,6 +70,7 @@
     font-size: 1.18rem;
     font-weight: 700;
     color: var(--Amber);
+    text-decoration: none;
 }
 
 .sec_title{
@@ -101,15 +102,16 @@
 }
 
 .logo-navBar {
-    width: 4.3vw;
-    height: 4.3v2;
+    width: 5.3vw;
+    height: 5.3vw;
 }
 
 .txt-navBar {
     font-family: Quicksand;
-    font-size: 1.89rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--OffBlack);
+    line-height: 2rem;
 }
 
 .btn-navBar {
@@ -471,14 +473,21 @@
 }
 
 .footer_txt-description{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--White);
-    line-height: 1rem;
+    line-height: 1.5rem;
+    width: 340px;
 }
 
 .footer_logo h3{
     color: var(--White);
 }
+
+.footer_logo{
+    align-items: flex-end;
+}
+
+
 
 .footer_navList li{
     list-style: none;
@@ -490,10 +499,10 @@
     font-weight: 600;
 }
 
-.footer_navList-box h4{
-    font-size: 1.18rem;
-    font-weight: 700;
+.footer_title{
+    font-size: 1.5rem;
     color: var(--White);
+    font-weight: 700;
 }
 
 .footer_navList-box{
@@ -510,10 +519,7 @@
     text-decoration: none;
 }
 
-.footer_socialLink-box h4{
-    color: var(--White);
-    font-weight: 700;
-}
+
 
 .footer_socialLink-box{
     align-items: flex-start;
@@ -669,6 +675,11 @@
         padding: 40px 10vw;
     }
 
+    .logo-navBar{
+        color: var(--white);
+        width: 9vw;
+        height: 9vw;
+    }
    
 
 
