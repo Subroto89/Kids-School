@@ -28,17 +28,19 @@
 
 }
 
-.quickSand {
-    font-family: "Fira Sans", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.raleWay {
-    font-family: "Fira Sans", serif;
-    font-weight: 400;
-    font-style: normal;
-}
+    .quickSand {
+        font-family: "Fira Sans", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .raleWay {
+        font-family: "Fira Sans", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
 
 /* Shared Styles */
 .flex-col {
@@ -70,23 +72,23 @@
     color: var(--Amber);
 }
 
-.btn-primary {
-    width: 13.68vw;
-    height: 3.47vw;
-    border: none;
-    border-radius: 5px;
-    color: var(--White);
-    background-color: var(--OffBlack);
-    cursor: pointer;
-}
-
-.sec_title {
+.sec_title{
     font-family: Quicksand;
     font-size: 2.72rem;
     font-weight: 700;
     color: var(--Black);
-
 }
+
+.btn-primary{
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    color: var(--White);
+    background-color: var(--OffBlack);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 
 
 /* Nav Bar Styles */
@@ -114,6 +116,15 @@
     background-color: var(--Amber);
     color: var(--OffBlack);
     cursor: pointer;
+}
+
+.header_navBar{
+    width: 80.5vw;
+    border-bottom: none;
+}
+
+.header_hambergurButton{
+    display: none;
 }
 
 .header_navList li {
@@ -150,17 +161,29 @@
 .hero {
     width: 80.5vw;
     height: 40vw;
-    background-image: url("../assets/hero-kids.png");
-    background-repeat: no-repeat;
-    background-size: 32vw;
-    background-position: right bottom;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.hero-title{
+    font-size: 3.32rem;
+    font-weight: 700;
+    color: var(--Black);
+}
+
+.hero-image{
+    width: 36%;
+
+}
+
+.hero-image img{
+    width: 100%;
 }
 
 .hero_txt-box {
     width: 44vw;
     height: 23vw;
+   
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
@@ -207,6 +230,13 @@
     gap: 26px;
 }
 
+.cur_card p{
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--Gray)
+}
+
 .cur_card-1 {
     background: linear-gradient(to bottom, #DEF5FF 0%, #FFFFFF 100%);
 
@@ -249,6 +279,19 @@
 
 }
 
+.cur_link-1{
+    color: var(--Amber);
+}
+
+.cur_link-2{
+    color: var(--SkyBlue)
+}
+
+.cur_link-3{
+    color: var(--DarkGray)
+}
+}
+
 .arrow {
     align-items: center;
     gap: 5px;
@@ -275,7 +318,8 @@
 
 .story_cards-box{
     width: 80.5vw;
-    height: 44vw;
+    /* height: 44vw; */
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -285,28 +329,37 @@
 .story_card-1{
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+    position: relative;
 }
 
 .story_card-2{
     grid-column: 3 / 4;
     grid-row: 1 / 2;
+    position: relative;
 }
 
 
 .story_card-3{
     grid-column: 4 / 5;
     grid-row: 1 / 2;
+    position: relative;
 }
 
 
 .story_card-4{
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+    position: relative;
 }
 
-.story_card-4{
+.story_card-5{
     grid-column: 4 / 5;
     grid-row: 2, 3;
+    position: relative;
+}
+
+.story_card-6{
+    display: none;
 }
 
 
@@ -331,31 +384,31 @@
 .story_image-1{
     background-image: url("../assets/story-1.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .story_image-2{
     background-image: url("../assets/story-2.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .story_image-3{
     background-image: url("../assets/story-3.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .story_image-4{
     background-image: url("../assets/story-4.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .story_image-5{
     background-image: url("../assets/story-5.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 
@@ -369,6 +422,9 @@
     font-size: 1rem;
     font-weight: 600;
     cursor:default;
+    position: absolute;
+    top: 56%;
+    left: 10%;
 
 }
 
@@ -406,12 +462,18 @@
 }
 
 .footer_logo-box{
-    width: 27.7vw;
+    width: 35vw;
     align-items: flex-start;
     gap: 15px;
     color: var(--White);
     font-size: 0.7rem;
     font-weight: 600;
+}
+
+.footer_txt-description{
+    font-size: 0.8rem;
+    color: var(--White);
+    line-height: 1rem;
 }
 
 .footer_logo h3{
@@ -465,4 +527,149 @@
 .footer_navList{
     gap: 5px;
     align-items: flex-start;
+}
+
+/* Media Query Styles for the Screen 768px & 1024px */
+
+@media screen and ((min-width: 768px) and (max-width: 1024px)) {
+    .header_navBar{
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--Amber);
+    }
+    
+    .header_navList{
+        display: none;
+    }
+
+    .btn-navBar{
+        display: none;
+    }
+
+    .header_hambergurButton{
+        display: block;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .hero-image{
+        order: 1;
+        width: 80.5vw;
+    }
+
+    .hero-image img{
+        width: 100%;
+    }
+    
+    .hero_txt-box {
+        order: 2;
+        width: 80.5vw;
+        height: 23vw;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    
+    }
+
+    .main{
+        margin-top: 800px;
+    }
+
+    .curriculum{
+       
+    }
+    .cur_card-box{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+    }
+
+    .cur_card{
+        width: 100%;
+        height: 80vw;
+        border: 1px solid #DEF5FF;
+        padding: 20%;
+    }
+
+    .cur_image {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    .cur_card h3{
+        font-size: 2rem;
+    }
+
+
+    .cur_card p{
+        font-size: 1.7rem;
+        height: 105px;
+        overflow: hidden;
+        text-align: center;
+        color: var(--Gray);
+    }
+
+
+
+    .story_cards-box{
+        width: 80.5vw;
+        height: 140vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .story_card-1{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .story_card-2{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    
+    .story_card-3{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    
+    .story_card-4{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .story_card-5{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .story_card-6{
+        display: block;
+        position: relative;
+    }
+
+    .story_card-6{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 10vw;
+    }
+
+   
+
+
 }
