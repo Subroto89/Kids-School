@@ -138,8 +138,13 @@
 }
 
 .header_navList {
-    gap: 26px;
+    gap: 35px;
 }
+
+.header_navList li a{
+    padding: 3px 6px;
+}
+
 
 .header_navList li:nth-child(1) a {
     color: var(--Home);
@@ -533,6 +538,37 @@
 .footer_navList{
     gap: 5px;
     align-items: flex-start;
+}
+
+
+
+/* Button Hover Effect */
+
+.btn-primary:hover{
+    color: var(--SkyBlue);
+    background-color: var(--Amber);
+}
+
+.btn-navBar:hover{
+    color: var(--Amber);
+    background-color: var(--SkyBlue);
+}
+
+.header_navList li a:hover{
+    color: var(--Black);
+    border: 1px solid var(--Amber);
+}
+
+.txt-link:hover{
+    color: var(--DimGray);
+}
+
+.cur_left-arrow:hover{
+    filter: grayscale(100%) contrast(100%);
+}
+
+.cur_right-arrow:hover{
+    filter: grayscale(100%) contrast(100%);
 }
 
 /* Media Query Styles for the Screen 768px & 1024px */
