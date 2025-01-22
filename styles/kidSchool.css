@@ -536,13 +536,15 @@
 }
 
 .footer_navList{
-    gap: 5px;
+    gap: 10px;
     align-items: flex-start;
 }
 
 
 
 /* Button Hover Effect */
+
+
 
 .btn-primary:hover{
     color: var(--SkyBlue);
@@ -568,6 +570,19 @@
 }
 
 .cur_right-arrow:hover{
+    filter: grayscale(100%) contrast(100%);
+}
+
+.header_hambergurButton:hover{
+    border: 1px solid red;
+}
+
+.footer_navList li a:hover{
+    color: var(--Amber);
+    font-weight: 750;
+}
+
+.footer_social-icon li a:hover{
     filter: grayscale(100%) contrast(100%);
 }
 
@@ -619,12 +634,9 @@
     }
 
     .main{
-        margin-top: 800px;
+        margin-top: 1000px;
     }
 
-    .curriculum{
-       
-    }
     .cur_card-box{
         display: flex;
         flex-direction: column;
@@ -717,6 +729,5 @@
         height: 9vw;
     }
    
-
-
+    
 }
